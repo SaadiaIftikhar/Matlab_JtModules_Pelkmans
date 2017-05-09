@@ -99,7 +99,7 @@ classdef identify_secondary_objects_iw < handle
                     length(unique_input_labels), length(unique_new_labels))
             end
 
-            output_label_image = segmentSecondary(rescaled_input_image, relabeled_image, relabeled_image, ...
+            output_label_image = segmentSecondary_iw(rescaled_input_image, relabeled_image, relabeled_image, ...
                                                   correction_factors, min_threshold, max_threshold);
 
             % Make sure labels are consistent
