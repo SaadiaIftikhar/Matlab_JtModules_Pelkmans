@@ -19,6 +19,6 @@ mask = imread(mask_file);
 % mask = mask(1:512,1:512);
 
 import jtlib.*;
-out = jtlib.segmentSecondary(input_image, mask, mask, correction_factors, min_treshold, max_treshold);
+out = jtlib.segmentSecondary_iw(input_image, mask, mask, correction_factors, min_treshold, max_treshold);
 end
 
